@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>$HAI TOKEN OFFICIAL - Solana Community Coin</title>
-<meta name="description" content="$HAI Token - The Official Solana Community Coin. Join the movement. Grow Together, Earn Together.">
+<title>HAI TOKEN $HAI - Solana Community Coin</title>
+<meta name="description" content="$HAI Token - Official Solana Community Coin. Grow Together, Earn Together">
 <style>
     * {margin: 0; padding: 0; box-sizing: border-box;}
   body {
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    background: #000;
     color: #fff;
     font-family: 'Arial', sans-serif;
     text-align: center;
@@ -16,101 +16,108 @@
     min-height: 100vh;
   }
   .container {
-    max-width: 650px;
+    max-width: 500px;
     margin: 0 auto;
   }
+  .logo {
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
   .logo img {
-    width: 140px; 
-    height: 140px; 
-    border-radius: 50%; 
-    margin-bottom: 20px; 
-    border: 4px solid #00f5ff;
-    box-shadow: 0 0 30px rgba(0, 245, 255, 0.5);
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
   h1 {
-    font-size: 2.8em;
-    color: #00f5ff;
-    margin-bottom: 8px;
-    text-shadow: 0 0 10px rgba(0, 245, 255, 0.5);
+    font-size: 2.5em;
+    margin-bottom: 12px;
   }
-  h2 {
+  h1 .green {color: #00ff88;}
+  h1 .blue {color: #00aaff;}
+  .subtitle {
     color: #aaa;
-    font-weight: 400;
-    font-size: 1.3em;
-    margin-bottom: 15px;
-  }
-  .slogan {
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-bottom: 35px;
-    color: #00f5ff;
-    font-weight: bold;
+    line-height: 1.5;
   }
   .buttons {
     display: flex;
-    gap: 12px;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
     margin-bottom: 40px;
   }
+  .btn-row {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
   .btn {
-    padding: 14px 24px;
-    border-radius: 14px;
+    padding: 16px 28px;
+    border-radius: 16px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1em;
-    color: #fff;
+    font-size: 1.1em;
     transition: all 0.3s;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border: none;
+    cursor: pointer;
   }
-  .btn:hover { 
-    transform: translateY(-3px) scale(1.05); 
-    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-  }
-  .btn-website { background: #00f5ff; color: #000; }
-  .btn-twitter { background: #1DA1F2; }
-  .btn-telegram { background: #0088cc; }
-  .btn-tiktok { background: #000; border: 1px solid #fff; }
-  .btn-pump { background: #9945FF; }
+  .btn:hover {transform: scale(1.05);}
+  .btn-green {background: #00ff88; color: #000;}
+  .btn-blue {background: #0088ff; color: #fff;}
+  .btn-black {background: #222; color: #fff; border: 1px solid #444;}
   .tokenomics {
-    background: rgba(26, 26, 46, 0.8);
+    background: #0a0a0a;
     padding: 25px;
-    border-radius: 18px;
-    border: 2px solid #00f5ff;
-    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid #222;
   }
-  .tokenomics h3 {color: #00f5ff; margin-bottom: 15px; font-size: 1.5em;}
-  .tokenomics p {margin: 8px 0; font-size: 1.1em;}
+  .tokenomics h2 {
+    color: #00ff88;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  .tokenomics p {
+    margin: 12px 0;
+    font-size: 1.1em;
+  }
+  .tokenomics b {color: #fff;}
 </style>
 </head>
 <body>
   <div class="container">
     
+    <!-- LOGO -->
     <div class="logo">
       <img src="logo.png" alt="$HAI Token Logo">
     </div>
 
-    <h1>🚀 $HAI TOKEN OFFICIAL 🚀</h1>
-    <h2>Solana Community Coin</h2>
-    <p class="slogan">Grow Together, Earn Together</p>
+    <h1><span class="green">HAI TOKEN</span> <span class="blue">$HAI</span></h1>
+    <p class="subtitle">Solana Community Coin. Grow Together, Earn Together</p>
 
+    <!-- BUTTONS -->
     <div class="buttons">
-      <a href="https://hai-token-pearl.vercel.app" target="_blank" class="btn btn-website">🌐 Website</a>
-      <a href="https://x.com/HAITOKENDEX" target="_blank" class="btn btn-twitter">🐦 Twitter</a>
-      <a href="https://t.me/HAITokendex" target="_blank" class="btn btn-telegram">📱 Telegram</a>
-      <a href="https://tiktok.com/@HAITOKENDEX" target="_blank" class="btn btn-tiktok">🎵 TikTok</a>
-      <a href="https://pump.fun/" target="_blank" class="btn btn-pump">🚀 Buy on Pump.fun</a>
+      <a href="#" target="_blank" class="btn btn-green">Buy on Raydium</a>
+      <div class="btn-row">
+        <a href="#" target="_blank" class="btn btn-green">Buy on Jupiter</a>
+        <a href="https://t.me/HAITokendex" target="_blank" class="btn btn-blue">Telegram</a>
+      </div>
+      <a href="https://x.com/HAITOKENDEX" target="_blank" class="btn btn-black">X / Twitter</a>
     </div>
 
+    <!-- TOKENOMICS -->
     <div class="tokenomics">
-      <h3>📊 Tokenomics</h3>
+      <h2>Tokenomics</h2>
       <p><b>Total Supply:</b> 1,000,000,000 $HAI</p>
-      <p><b>Chain:</b> Solana</p>
+      <p><b>Liquidity:</b> 50% Locked</p>
       <p><b>Tax:</b> 0% Buy / 0% Sell</p>
-      <p><b>Buy:</b> Launching Soon on Pump.fun</p>
+      <p><b>Contract:</b> Coming Soon</p>
     </div>
 
   </div>
