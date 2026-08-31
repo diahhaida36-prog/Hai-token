@@ -7,28 +7,41 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { background: #0a0a0a; color: #fff; font-family: Arial, sans-serif; padding: 20px; text-align: center; }
-    .container { max-width: 800px; margin: auto; }
+    .container { max-width: 850px; margin: auto; }
+    
+    .logo { width: 120px; height: 120px; margin: 0 auto 15px; filter: drop-shadow(0 0 20px #00ff88); }
     h1 { color: #00ff88; font-size: 42px; margin-bottom: 5px; }
-    .subtitle { color: #aaa; margin-bottom: 25px; }
+    .subtitle { color: #aaa; margin-bottom: 25px; font-size: 16px; }
+    
     .ca-box { background: #1a1a1a; padding: 20px; border-radius: 12px; border: 1px solid #00ff88; margin: 20px 0; }
-    .ca-text { font-family: monospace; word-break: break-all; color: #00ff88; font-size: 14px; margin: 10px 0; }
-    .copy-btn { background: #00ff88; color: #000; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; }
-    .copy-btn:hover { background: #00cc70; }
-    .buy-section { background: #111; padding: 25px; border-radius: 15px; border: 2px solid #00ff88; margin: 30px 0; }
-    .btn { display: block; padding: 15px; border-radius: 12px; text-decoration: none; font-weight: bold; font-size: 16px; margin: 12px 0; transition: 0.2s; }
-    .btn:hover { transform: scale(1.02); }
-    .btn-green { background: #00ff88; color: #000; }
-    .btn-purple { background: #9333ea; color: #fff; }
+    .ca-text { font-family: monospace; word-break: break-all; color: #00ff88; font-size: 13px; margin: 10px 0; }
+    .copy-btn { background: #00ff88; color: #000; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: 0.2s; }
+    .copy-btn:hover { background: #00cc70; transform: scale(1.05); }
+    
+    .swap-section { background: #111; padding: 25px; border-radius: 15px; border: 2px solid #00ff88; margin: 30px 0; }
+    
+    .tokenomics { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin: 30px 0; }
+    .card { background: #1a1a1a; padding: 20px; border-radius: 12px; border: 1px solid #222; transition: 0.2s; }
+    .card:hover { border-color: #00ff88; }
+    .card h3 { color: #00ff88; margin: 0 0 5px 0; font-size: 24px; }
+    
+    .socials { margin-top: 30px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+    .btn { display: inline-block; padding: 14px 20px; border-radius: 12px; text-decoration: none; font-weight: bold; font-size: 15px; transition: 0.2s; }
+    .btn:hover { transform: scale(1.05); }
     .btn-gray { background: #333; color: #fff; }
     .btn-linktree { background: #39e09b; color: #000; }
-    .tokenomics { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin: 30px 0; }
-    .card { background: #1a1a1a; padding: 20px; border-radius: 12px; border: 1px solid #222; }
-    .card h3 { color: #00ff88; margin: 0 0 5px 0; font-size: 24px; }
-    .socials { margin-top: 30px; }
+    
+    @media (max-width: 600px) {
+      .tokenomics { grid-template-columns: 1fr; }
+      h1 { font-size: 32px; }
+    }
   </style>
 </head>
 <body>
   <div class="container">
+
+    <!-- LOGO -->
+    <img src="https://i.imgur.com/8QZ9xK1.png" alt="HAI Logo" class="logo">
 
     <h1>HAI TOKEN $HAI</h1>
     <p class="subtitle">The Future of Community on Solana 🚀</p>
@@ -37,22 +50,21 @@
     <div class="ca-box">
       <h3>Contract Address</h3>
       <p class="ca-text">5ST4ULdrbwfuAJnwpokvTeu4V1Uwx6BM2LJiheFhpump</p>
-      <button class="copy-btn" onclick="navigator.clipboard.writeText('5ST4ULdrbwfuAJnwpokvTeu4V1Uwx6BM2LJiheFhpump'); alert('CA Copied!')">COPY CA</button>
+      <button class="copy-btn" onclick="navigator.clipboard.writeText('5ST4ULdrbwfuAJnwpokvTeu4V1Uwx6BM2LJiheFhpump'); this.innerText='COPIED!'; setTimeout(()=>this.innerText='COPY CA',2000)">COPY CA</button>
     </div>
 
-    <!-- BUY WIDGET -->
-    <div class="buy-section">
-      <h2>BUY $HAI NOW</h2>
-      <p style="margin-bottom:15px; color:#aaa;">Swap SOL to $HAI. 0.5% fee supports development 💚</p>
+    <!-- SWAP WIDGET - BISA SEMUA TOKEN -->
+    <div class="swap-section">
+      <h2>SWAP ANY TOKEN</h2>
+      <p style="margin-bottom:15px; color:#aaa;">Swap SOL ke $HAI, $DOGE, $BONK dll. 0.5% fee supports development 💚</p>
       
-      <a href="https://jup.ag/swap/SOL-5ST4ULdrbwfuAJnwpokvTeu4V1Uwx6BM2LJiheFhpump?feeBps=50&feeAccount=2xZUBqvH7J1zDcAQvdq8qYgnA1twUxPoLChD3vx4Y3qe" 
-         target="_blank" class="btn btn-green">🚀 Buy on Jupiter</a>
-
-      <a href="https://raydium.io/swap/?inputMint=sol&outputMint=5ST4ULdrbwfuAJnwpokvTeu4V1Uwx6BM2LJiheFhpump" 
-         target="_blank" class="btn btn-green">Buy on Raydium</a>
-
-      <a href="https://pump.fun/coin/5ST4ULdrbwfuAJnwpokvTeu4V1Uwx6BM2LJiheFhpump" 
-         target="_blank" class="btn btn-purple">🚀 Buy on Pump.fun</a>
+      <iframe
+        id="jupiter-terminal"
+        src="https://jup.ag/swap?feeBps=50&feeAccount=2xZUBqvH7J1zDcAQvdq8qYgnA1twUxPoLChD3vx4Y3qe"
+        width="100%"
+        height="600px"
+        style="border:2px solid #00ff88; border-radius:15px; background:#000;">
+      </iframe>
     </div>
 
     <!-- TOKENOMICS -->
