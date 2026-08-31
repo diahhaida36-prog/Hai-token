@@ -16,15 +16,17 @@
   .subtitle {color: #aaa; font-size: 1.1em; margin-bottom: 35px;}
   .buttons {display: flex; flex-direction: column; gap: 15px; margin-bottom: 40px;}
   .btn-row {display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;}
-  .btn {padding: 16px 28px; border-radius: 16px; text-decoration: none; font-weight: bold; font-size: 1.1em; transition: all 0.3s;}
+  .btn {padding: 16px 28px; border-radius: 16px; text-decoration: none; font-weight: bold; font-size: 1.1em; transition: all 0.3s; display: block;}
   .btn:hover {transform: scale(1.05); box-shadow: 0 0 15px rgba(0,255,136,0.5);}
   .btn-green {background: #00ff88; color: #000;}
   .btn-blue {background: #0088ff; color: #fff;}
   .btn-black {background: #222; color: #fff; border: 1px solid #444;}
   .btn-purple {background: #9945FF; color: #fff;}
+  .btn-linktree {background: #39e09b; color: #000;}
+  .copy-btn {background: #333; color: #00ff88; border: 1px solid #00ff88; padding: 8px 15px; border-radius: 10px; font-size: 0.9em; cursor: pointer; margin-top: 8px; font-weight: bold;}
   .tokenomics {background: #0a0a0a; padding: 25px; border-radius: 20px; border: 1px solid #222;}
   .tokenomics h2 {color: #00ff88; font-size: 1.8em; margin-bottom: 20px;}
-  .tokenomics p {margin: 12px 0; font-size: 1.1em;}
+  .tokenomics p {margin: 12px 0; font-size: 1.1em; word-break: break-all;}
   .tokenomics b {color: #00ff88;}
 </style>
 </head>
@@ -49,6 +51,8 @@
         <a href="https://x.com/HAITOKENDEX" target="_blank" class="btn btn-black">𝕏 Twitter</a>
         <a href="https://tiktok.com/@HAITOKENDEX" target="_blank" class="btn btn-black">🎵 TikTok</a>
       </div>
+      <!-- TOMBOL LINKTREE BAHASA INGGRIS -->
+      <a href="https://linktr.ee/HAITOKEN" target="_blank" class="btn btn-linktree">🌐 Official Links</a>
     </div>
 
     <div class="tokenomics">
@@ -56,7 +60,9 @@
       <p><b>Total Supply:</b> 1,000,000,000 $HAI</p>
       <p><b>Liquidity:</b> 100% Auto Burn on Pump.fun</p>
       <p><b>Tax:</b> 0% Buy / 0% Sell</p>
-      <p><b>Contract:</b> Coming Soon</p>
+      <!-- UDAH DIHAPUS COMING SOON -->
+      <p><b>Contract:</b> 5ST4ULdrbwfuAJnwpokvTeu4V1Uwx6BM2LJiheFhpump</p>
+      <button class="copy-btn" onclick="navigator.clipboard.writeText('5ST4ULdrbwfuAJnwpokvTeu4V1Uwx6BM2LJiheFhpump'); this.innerText='COPIED!'; setTimeout(()=>this.innerText='COPY CONTRACT',2000)">COPY CONTRACT</button>
     </div>
 
   </div>
